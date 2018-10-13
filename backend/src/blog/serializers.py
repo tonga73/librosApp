@@ -12,4 +12,4 @@ class CuentoSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Cuento
-        fields = ('url', 'publicacion', 'titulo', 'texto')
+        fields = ('id', 'url', 'publicacion', 'titulo', 'texto')

@@ -1,5 +1,6 @@
 import  React from 'react';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+import { Link } from 'react-router-dom';
 
 const { Header, Content, Footer, Sider } = Layout;
 const SubMenu = Menu.SubMenu;
@@ -26,11 +27,11 @@ class CustomLayout extends React.Component {
           <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
             <Menu.Item key="1">
               <Icon type="pie-chart" />
-              <span>Option 1</span>
+              <span><Link to="/">1 y</Link></span>
             </Menu.Item>
             <Menu.Item key="2">
               <Icon type="desktop" />
-              <span>Option 2</span>
+              <span><Link to="/">2 y</Link></span>
             </Menu.Item>
             <SubMenu
               key="sub1"

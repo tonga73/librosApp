@@ -11,7 +11,7 @@ class PublicacionList(generics.ListCreateAPIView):
 
 class PublicacionDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Publicacion.objects.all()
-    serializer_class = Publicacion
+    serializer_class = PublicacionSerializer
 
 
 
